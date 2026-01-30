@@ -1,7 +1,8 @@
-# Problem 27: Create a list of squares
-# Find and fix the error
+def gcd(a, b):
+    while b!= 0:
+        temp= b
+        b = a % b
+        a = temp
+    return a
 
-squares = []
-for i in range(1, 6):
-    squares.append(i * i)
-print(f"Squares: {squares}")
+print(f"GCD of 48 and 18: {gcd(48, 18)}")

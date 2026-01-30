@@ -1,7 +1,11 @@
-# Problem 16: Find the second largest number in a list
+# Problem 15: Convert temperature from Celsius to Fahrenheit
 # Find and fix the error
 
-numbers = [45, 89, 12, 78, 34]
-numbers.sort()
-second_largest = numbers[-2]
-print(f"Second largest: {second_largest}")
+def celsius_to_fahrenheit(celsius):
+    fahrenheit = celsius * 9/5 + 32
+    return fahrenheit
+
+temp_c=25
+temp_f=celsius_to_fahrenheit(temp_c)
+print(f"{temp_c}°C = {temp_f}°F")
+

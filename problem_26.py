@@ -1,10 +1,9 @@
-# Problem 26: Add item to a list
-# Find and fix the error
+def gcd(a, b):
+    while b!= 0:
+        temp= b
+        b = a % b
+        a = temp
+    return a
 
-def add_item(lst, item):
-    lst = lst + [item]
-    return lst
+print(f"GCD of 48 and 18: {gcd(48, 18)}")
 
-my_list = [1, 2, 3]
-add_item(my_list, 4)
-print(f"List after adding: {my_list}")
